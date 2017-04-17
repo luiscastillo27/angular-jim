@@ -1,10 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es" ng-app="appJim">
 <head>
-	<meta charset="UTF-8">
-	<title>Curso angular</title>
+    <meta charset="utf-8">
+    <title>Mantenimiento de empleados</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-	
+
+    <div class="contenedor">
+        <ng-view></ng-view>
+    </div>
+
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
 </body>
 </html>
