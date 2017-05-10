@@ -1,33 +1,21 @@
 var app = angular.module('listControllers', []);
 
 app.controller('InicioCtrl', ['$scope', '$http', function ($scope, $http) {
-    
-    $scope.sumar = function(){
-    	var r1 = $scope.num1;
-    	var r2 = $scope.num2;
-    	var resp = r1 + r2;
-    	$scope.resultado = resp;
-    }
+    console.log("INICIO");
+}]);
 
-    $scope.resta = function(){
-    	var r1 = $scope.num1;
-    	var r2 = $scope.num2;
-    	var resp = r1 - r2;
-    	$scope.resultado = resp;
-    }
-    $scope.multiplica = function(){
-        var r1 = $scope.num1;
-        var r2 = $scope.num2;
-        var resp = r1 * r2;
-        $scope.resultado = resp;
-    }
-     $scope.divide = function(){
-        var r1 = $scope.num1;
-        var r2 = $scope.num2;
-        var resp = r1 / r2;
-        $scope.resultado = resp;
-    }
+app.controller('BuscarCtrl', ['$scope', '$http', function ($scope, $http) {
+   console.log("BUSCAR"); 
+}]);
 
+app.controller('LoginCtrl', ['$scope', '$http', function ($scope, $http) {
+   console.log("LOGIN");  
+}]);
 
+app.controller('PostCtrl', ['$scope', '$http', function ($scope, $http) {
+    console.log("POST");
+}]);
 
+app.controller('RegistrarseCtrl', ['$scope', '$http', function ($scope, $http) {
+    console.log("REGISTRAR");
 }]);
