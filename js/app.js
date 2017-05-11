@@ -1,31 +1,33 @@
-var app = angular.module('appJim', [
-  'ngRoute',
-  'listControllers'
-]);
+(function(){
 
-app.config(['$routeProvider', function($routeProvider) {
-    $routeProvider.
-      when('/', {
-        templateUrl: 'templates/inicio.html',
-        controller: 'InicioCtrl'
-      }).
-      when('/buscar', {
-        templateUrl: 'templates/buscar.html',
-        controller: 'BuscarCtrl'
-      }).
-      when('/login', {
-        templateUrl: 'templates/login.html',
-        controller: 'LoginCtrl'
-      }).
-      when('/post/:id', {
-        templateUrl: 'templates/post.html',
-        controller: 'PostCtrl'
-      }).
-      when('/registrarse', {
-        templateUrl: 'templates/registrarse.html',
-        controller: 'RegistrarseCtrl'
-      }).
-      otherwise({
-        redirectTo: '/'
-      });
-}]);
+  var appFont = angular.module('jimApp', ['ngRoute', 'BuscarCtrl', 
+  'InicioCtrl', 'LoginCtrl', 'PostCtrl' ,'RegistrarseCtrl']);
+
+  appFont.config(function($routeProvider) {
+      $routeProvider
+        .when('/', {
+          controller: 'InicioCtrl',
+          templateUrl: 'templates/inicio.html'
+        })
+        .when('/registrarse', {
+          controller: 'RegistrarseCtrl',
+          templateUrl: 'templates/registrarse.html'
+        })
+        .when('/login', {
+          controller: 'LoginCtrl',
+          templateUrl: 'templates/login.html'
+        })
+        .when('/buscar', {
+          controller: 'BuscarCtrl',
+          templateUrl: 'templates/buscar.html'
+        })
+        .when('/post/:id', {
+          controller: 'PostCtrl',
+          templateUrl: 'templates/post.html'
+        })
+        .otherwise({ 
+          redirectTo: '/'
+        });
+    });
+
+}());
