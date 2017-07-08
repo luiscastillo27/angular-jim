@@ -1,31 +1,34 @@
 (function(){
 
-  var appFont = angular.module('jimApp', ['ngRoute', 'BuscarCtrl', 
-  'InicioCtrl', 'LoginCtrl', 'PostCtrl' ,'RegistrarseCtrl']);
+  var appFont = angular.module('jimApp', ['ngRoute', 'InicioCtrl', 
+  'HistoriaCtrl', 'ProductoCtrl', 'ContactoCtrl' ,'BuscarCtrl', 'LoginCtrl']);
 
   appFont.config(function($routeProvider) {
-      $routeProvider
-        .when('/', {
+        $routeProvider.when('/', {
           controller: 'InicioCtrl',
           templateUrl: 'templates/inicio.html'
         })
-        .when('/registrarse', {
-          controller: 'RegistrarseCtrl',
-          templateUrl: 'templates/registrarse.html'
+        $routeProvider.when('/historia', {
+          controller: 'HistoriaCtrl',
+          templateUrl: 'templates/historia.html'
         })
-        .when('/login', {
-          controller: 'LoginCtrl',
-          templateUrl: 'templates/login.html'
+        $routeProvider.when('/producto', {
+          controller: 'ProductoCtrl',
+          templateUrl: 'templates/producto.html'
         })
-        .when('/buscar', {
+        $routeProvider.when('/contacto', {//
+          controller: 'ContactoCtrl',
+          templateUrl: 'templates/contacto.html'
+        })
+        $routeProvider.when('/buscar', {
           controller: 'BuscarCtrl',
           templateUrl: 'templates/buscar.html'
         })
-        .when('/post/:id', {
-          controller: 'PostCtrl',
-          templateUrl: 'templates/post.html'
+        $routeProvider.when('/login', {
+          controller: 'LoginCtrl',
+          templateUrl: 'templates/login.html'
         })
-        .otherwise({ 
+        $routeProvider.otherwise({ 
           redirectTo: '/'
         });
     });

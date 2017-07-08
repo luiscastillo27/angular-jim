@@ -1,0 +1,56 @@
+#dg-container{
+	margin-top: 20px !important;
+}
+.dg-wrapper{
+	width: 481px;
+	height: 316px;
+	margin: 0 auto;;
+	position: relative;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-perspective: 1000px;
+	-moz-perspective: 1000px;
+	-o-perspective: 1000px;
+	-ms-perspective: 1000px;
+	perspective: 1000px;
+}
+.dg-wrapper a{
+	width: 482px;
+	height: 316px;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.dg-wrapper a.dg-transition{
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.dg-wrapper a img{
+	display: block;
+	padding: 0;
+	border-radius: 5px;
+	box-shadow: 0 0 2px #000;
+}
+.dg-wrapper a div{
+	text-align: center;
+	color: #fff;
+	font-size: 16px;
+	width: 100%;
+	margin-top: -40px;
+	display: ;
+	position: absolute;
+	padding: 10px;
+	border-radius: 0 0 5px 5px;
+	opacity: 0.8;
+	background: -webkit-linear-gradient(top, #5d3b3b 0%, #451b1b  100%);
+	background: -moz-linear-gradient(top, #e3bf78 0%, #d4a453 100%);
+	background: -o-linear-gradient(top, #e3bf78 0%, #d4a453 100%);
+	background: linear-gradient(top, #e3bf78 0%, #d4a453 100%);
+}
