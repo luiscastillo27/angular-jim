@@ -1,4 +1,5 @@
 *{
+<<<<<<< HEAD
 	margin: 0px;
 	padding: 0px;
 }
@@ -73,6 +74,436 @@
 
 
 
+=======
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+	font-family: 'Gabriela', Arial Black;
+	font-size: 12px;
+}
+.hecho-true {
+    text-decoration: line-through;
+    color: grey;
+}
+body{
+	background-image: url(../img/fondo.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+#loader{
+	padding-left: 10px;
+	display:none;
+}
+.fb-like{
+	padding: 5px;
+	float: right;
+	margin-top: -42px;
+}
+#contenedor{
+	width: 100%;
+	height: 100%;
+}
+::-webkit-input-placeholder {
+   color: #451b1b;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #451b1b;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #451b1b;  
+}
+
+:-ms-input-placeholder {  
+   color: #451b1b;  
+}
+h2{
+	font-size: 35px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	color: #fff;
+	text-shadow:1px 1px 2px #000;
+}
+.aviso{
+	display: none;
+	float: right;
+	font-size: 18px;
+	margin-top: -45px;
+	margin-bottom: 5px;
+	background: #ccc;
+	padding: 5px;
+}
+.aviso.error{
+	background: #f1a2a2;
+	color: #6b0d14;
+}
+.aviso.exito{
+	color: #325c27;
+	background: #c0f9b9;
+	margin-top: 10px;
+}
+<!--
+	/*MENU*/
+-->
+#menu{
+	width: 100%;
+	height: 60px;
+	box-shadow: 0 0 4px #000;
+	position: fixed;
+	top:0;
+	z-index: 20;
+	opacity: 0.9;
+	background: -webkit-linear-gradient(top, #5d3b3b 0%, #451b1b  100%);
+	background: -moz-linear-gradient(top, #5d3b3b 0%, #451b1b 100%);
+	background: -o-linear-gradient(top, #5d3b3b 0%, #451b1b 100%);
+	background: linear-gradient(top, #5d3b3b 0%, #451b1b 100%);
+}
+#menu #btn_menu{
+	margin-top: -15px;
+}
+#menu #izquierda img{
+	float: left;
+	height: 50px;
+	margin-top: 3px;
+	margin-left: 7px;
+}
+#menu #derecha{
+	height: 70px;
+	float: right;
+	transition:all .5s ease;
+}
+#menu #derecha li{
+	float:left;
+	list-style: none;
+	display: table-cell;
+}
+#menu #derecha li a{
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 20px;
+	text-decoration: none;
+	line-height: 60px;
+	color: #fff;
+	font-size: 22px;
+	padding-bottom:10px; 
+}
+#menu #derecha span{
+	color: #fff;
+	font-size: 22px;
+}
+#menu #derecha li a:hover{
+	border-bottom:solid 5px #d4a453;
+}
+#menu #derecha li .activo{
+	border-bottom:solid 5px #d4a453;
+}
+<!--
+	/*BUSCADOR*/
+-->
+#menu .busqueda{
+	float: left;
+	height: 60px;
+	position: relative;
+	z-index: 30;
+	margin-right: 10px;
+}
+#menu .busqueda input{
+	margin-top:12px; 
+	font-size: 20px;
+	padding: 5px;
+	padding-left: 25px;
+	outline: none;
+	border-radius: 5px;
+	border: none;
+	width: 100%;
+	opacity: 1 !important;
+}
+#menu .busqueda input:focus{
+	opacity: 1 !important;
+}
+#menu .busqueda a{
+	position: absolute;
+	font-size: 20px;
+	color: #5d3b3b;
+	text-decoration: none;
+	margin-top: 20px;
+	margin-left: 5px;
+}
+#menu .busqueda #display{
+	width: 100%;
+	height: 57px;
+	max-height: 200px;
+	position: absolute;
+	background: #fff;
+	margin-top: 5px;
+	display:none;
+	overflow-y: auto;
+	overflow-x:none;
+	display:none;
+}
+#menu .busqueda #display a{
+	margin-top: 4px;
+	display: inline-block;
+	width: 100%;
+	padding: 2px;
+	margin: 0px;
+}
+#menu .busqueda #display a:hover{
+	background: -webkit-linear-gradient(top, #fff 0%, #ccc  100%);
+	background: -moz-linear-gradient(top, #fff 0%, #ccc 100%);
+	background: -o-linear-gradient(top, #fff 0%, #ccc 100%);
+	background: linear-gradient(top, #fff 0%, #ccc 100%);
+}
+#menu .busqueda #display img{
+	width: 47px;
+	height: 47px;
+	border-radius: 5px;
+	margin-left: 2px;
+	margin-right: 7px;
+	float: left;
+	margin-top: 3px;
+}
+#menu .busqueda #display h3{
+	color: #000;
+	font-size: 14px;
+	text-transform: capitalize;
+	font-weight: bold;
+}
+#menu .busqueda #display h2{
+	color: #000;
+	font-size: 12px;
+	text-shadow: none;
+	font-weight: lighter;
+}
+#menu .busqueda #display p{
+	color: #000;
+	font-size: 11px;
+	margin-top: 4px;
+	float: left;
+	font-weight: lighter;
+}
+<!--
+	/*CONTENIDO*/
+-->
+.contenido{
+	width: 100%;
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+.contenido.mitad{
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+}
+<!--
+	/*PIE DE PAGINA*/
+-->
+.pie.normal{
+	width: 100%;
+	height: 55px;
+	text-align: center;
+	box-shadow: 0 0 4px #000;
+	color: #fff;
+	opacity: 0.9;
+	position:none;
+	background: -webkit-linear-gradient(top, #5d3b3b 0%, #451b1b  100%);
+	background: -moz-linear-gradient(top, #5d3b3b 0%, #451b1b 100%);
+	background: -o-linear-gradient(top, #5d3b3b 0%, #451b1b 100%);
+	background: linear-gradient(top, #5d3b3b 0%, #451b1b 100%);
+}
+.pie.abajo{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 55px;
+	text-align: center;
+	box-shadow: 0 0 4px #000;
+	color: #fff;
+	opacity: 0.9;
+	position:none;
+	z-index: 10;
+	background: -webkit-linear-gradient(top, #5d3b3b 0%, #451b1b  100%);
+	background: -moz-linear-gradient(top, #e3bf78 0%, #d4a453 100%);
+	background: -o-linear-gradient(top, #e3bf78 0%, #d4a453 100%);
+	background: linear-gradient(top, #e3bf78 0%, #d4a453 100%);
+}
+.pie.abajo h3 , .pie.normal h3{
+	font-size: 17px;
+}
+.pie.abajo p, .pie.normal p{
+	font-size: 12px;
+}
+
+<!--
+	/*PAGINA DE INICIO*/
+-->
+#horarios{
+	width: 35%;
+	float: left;
+	background: -webkit-linear-gradient(top, #fff 0%, #ccc  100%);
+	background: -moz-linear-gradient(top, #fff 0%, #ccc 100%);
+	background: -o-linear-gradient(top, #fff 0%, #ccc 100%);
+	background: linear-gradient(top, #fff 0%, #ccc 100%);
+	font-size: 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 4px #000;
+}
+#horarios h3, #social h3{
+	font-size: 30px;
+	text-align: center;
+	line-height: 60px;
+	background: -webkit-linear-gradient(top, #5d3b3b 0%, #451b1b  100%);
+	background: -moz-linear-gradient(top, #e3bf78 0%, #d4a453 100%);
+	background: -o-linear-gradient(top, #e3bf78 0%, #d4a453 100%);
+	background: linear-gradient(top, #e3bf78 0%, #d4a453 100%);
+	border-radius: 5px 5px 0 0 ;
+	color: #fff;
+}
+#horarios p{
+	font-size: 20px;
+	text-align: center;
+	line-height: 60px;
+}
+#social{
+	width: 48%;
+	height: 750px;
+	float: right;
+	border-radius: 5px;
+}
+<!--
+	/*PAGINA PRODUCTOS*/
+-->
+.contenido #slider{
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+}
+.contenido #productos{
+	width: 100%;
+	padding-bottom: 60px;
+	position: absolute;
+}
+.contenido #des-slider{
+	width: 80%;
+	background-image: url(../img/contenido.png);
+	border-radius: 5px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 10px;
+	font-size: 15px;
+	margin-top: -25px;
+	margin-bottom: 20px;
+	box-shadow: 0 0 2px #000;
+}
+.contenido #des-slider h3{
+	font-size: 20px;
+}
+<!--
+	/*VER*/
+-->
+#ver{
+	display: inline-block;
+	width: 45%;
+	height: 300px;
+	float: left;
+	margin-top: 20px;
+	box-shadow: 0 0 4px #000;
+	margin-left: 5%;
+	padding: 10px;
+	background-color: #fff;
+	border-radius: 5px;
+}
+#ver img{
+	display:block;
+	width: 70%;
+	height: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+#ver-descripcion{
+	width: 40%;
+	float: right;
+	background: url(../img/contenido.png);
+	margin-top: 20px;
+	box-shadow: 0 0 4px #000;
+	margin-right: 5%;
+}
+#ver-descripcion table{
+	width: 100%;
+	border-collapse: collapse;
+	border-radius: 5px;
+	opacity: 0.8;
+	color: #000;
+}
+#ver-descripcion strong{
+	font-size: 22px;
+}
+#ver-descripcion table tr,#ver-descripcion table td{
+	padding: 10px;
+	border:1px solid #000;
+	font-size: 18px;
+	text-align: justify;
+}
+#ver-descripcion table tr:nth-child(odd) td{
+	background:#fff;
+}
+#ver-descripcion table tr td{
+	background:#ccc;
+}
+<!--
+	/*CELULAR*/
+-->
+@media screen and (max-width: 1055px){
+	#menu #izquierda #btn_menu{
+		display: block;
+		height: 75px;
+		width: 7%;
+		float: right;
+		cursor: pointer;
+	}
+	#menu #izquierda #btn_menu span{
+		display: block;
+		color: #fff;
+		font-size: 40px;
+		text-align: center;
+		margin-top: 23px;
+	}
+	#menu #derecha{
+		left: -100%;
+		width: 93%;
+		height: 100%;
+		background: -webkit-linear-gradient(top, #5d3b3b 0%, #451b1b  100%);
+		background: -moz-linear-gradient(top, #5d3b3b 0%, #451b1b 100%);
+		background: -o-linear-gradient(top, #5d3b3b 0%, #451b1b 100%);
+		background: linear-gradient(top, #5d3b3b 0%, #451b1b 100%);
+		float: none;
+		margin-top: 45px;
+		display: block;
+		position: fixed;
+	}
+	#menu #derecha li{
+		list-style: none;
+		float: none;
+		display: block;
+		width: 100%;
+	}
+	#menu #derecha li a{
+		display: block;
+		width: 100%;
+		border-bottom:solid 5px #fff;
+		padding: 5px;
+		padding-left: 20px; 
+	}
+	#menu .busqueda{
+		display: none;
+	}
+}
+>>>>>>> origin/master
 
 
 

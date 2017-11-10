@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE HTML>
 <html>
   <head>
@@ -26,4 +27,102 @@
 
 
   </body>
+=======
+<!DOCTYPE HTML>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Café Capitel</title>
+    <meta name="description" content="Café Capitel es el nombre de este proyecto que surge de la pasión de conocer y valorar las cualidades que obtiene la cereza de café cuando el clima, la altitud, la humedad, y condiciones únicas que se presentan en una región especifica de nuestro Querido México, seguido de un esmero cuidado, selección y tueste, brindan esencias propias al grano.">
+    <meta name="keywords" content="Café, Capitel, Café Capitel, Frappé, chocolate, galletas, comercio">
+    <meta name="author" content="Luis Castillo luis_xp_lg@hotmail.com">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/iconos.css">
+    <link href='http://fonts.googleapis.com/css?family=Gabriela' rel='stylesheet' type='text/css'>
+    <link href='css/onepage-scroll.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/menu.css" />
+    <link rel="stylesheet" type="text/css" href="css/hoverEffects.css" /> 
+    <link rel="stylesheet" type="text/css" href="css/contacto.css" />    
+  </head>
+
+  <body ng-app="jimApp">
+
+   <div id="contenedor">
+    <div id="menu">
+     <ul id="izquierda">
+      <li><div id="btn_menu"><center><span class="icon-lock"></span></center></div>
+        <a href="./"><img src="img/logo.png"/></a>
+      </li>
+     </ul>
+
+    <ul id="derecha">
+      <li><a href="#/" class="activo"><span class="icon-house"></span> Inicio</a></li>
+      <li><a href="#/producto"><span class="icon-directions"></span> Productos</a></li>
+      <li><a href="#/historia"><span class="icon-edit"></span> Historia</a></li>
+      <li><a href="#/contacto"><span class="icon-mail"></span> Contacto</a></li>
+          <div class="busqueda">
+            <form action="#" method="post">
+              <a href="#" class="icon-search"></a>
+              <input type="text" class="busca" placeholder="Buscar productos">
+              <div id="display"></div>
+            </form>
+          </div>
+      </ul>
+    </div><!--MENU-->
+
+        <div ng-view> </div>
+
+    <div class="pie abajo">
+      <h3>- Café Capitel -</h3>
+      <p> 9439 Bandera Rd </p>
+      <p> San Antonio, Texas 78250 </p>
+
+        <div id="fb-root"></div>
+          <script>
+            (function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.0";
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+          </script>
+
+      <div class="fb-like" data-href="https://www.facebook.com/CafeCapitel" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div>
+    </div><!--PIE-->
+  </div><!--CONTENEDOR-->
+
+      <!-- Footer -->
+  <div id="footer">
+          <!-- Icons -->
+      <ul class="icons">
+        <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+        <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+        <li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+        <li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+      </ul>
+  </div>
+
+    <!-- Scripts -->
+  
+  <script src="js/angular.min.js"></script>
+  <script src="js/angular-route.min.js"></script>
+  <script src="js/angular-resource.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.onepage-scroll.js"></script>
+  <script type="text/javascript" src="js/jquery.gallery.js"></script>
+  <script src="js/modernizr.custom.53451.js"></script>
+  <script src="controllers/InicioCtrl.js"></script>
+  <script src="controllers/HistoriaCtrl.js"></script>
+  <script src="controllers/ProductoCtrl.js"></script>
+  <script src="controllers/ContactoCtrl.js"></script>
+  <script src="controllers/BuscarCtrl.js"></script>
+  <script src="controllers/LoginCtrl.js"></script>
+ 
+
+  </body>
+>>>>>>> origin/master
 </html>

@@ -57,6 +57,20 @@
 	}
 
 /* Containers */
+form{
+	display: block;
+	width: 400px;
+	margin: 0px auto;
+}
+form button{
+	padding: 10px;
+	font-size: 20px;
+}
+form input{
+	padding: 10px;
+	margin-bottom: 10px;
+	font-size: 20px;
+}
 	.container {
 		margin-left: auto;
 		margin-right: auto;
